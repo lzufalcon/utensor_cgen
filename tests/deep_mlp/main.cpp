@@ -6,7 +6,7 @@
 void run_mlp()
 {
     TensorIdxImporter t_import;
-    Tensor *input_x = t_import.float_import("/fs/tmp.idx");
+    Tensor *input_x = t_import.float_import("tmp.idx");
     Context ctx;
 
     get_simple_mnist_ctx(ctx, input_x);
